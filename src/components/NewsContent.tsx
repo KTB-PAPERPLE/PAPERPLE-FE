@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { openLinkInNewBrowser } from '../utils/browserUtils';
 
 interface NewsContentProps {
   title: string;
@@ -26,7 +27,10 @@ const NewsContent = ({ title, link, summary, image }: NewsContentProps) => {
 
   return (
     <article>
-      <button className="text-[#26262C] font-semibold hover:underline text-left">
+      <button
+        className="text-[#26262C] font-semibold hover:underline text-left"
+        onClick={() => openLinkInNewBrowser(link)}
+      >
         {title}
       </button>
       <ul className="mt-[16px] text-[#444444] text-[12px]">
