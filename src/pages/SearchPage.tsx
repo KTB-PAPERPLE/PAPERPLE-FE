@@ -67,7 +67,7 @@ const SearchPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full bg-gray-100">
+    <div className="flex flex-col items-center w-full">
       <form onSubmit={handleSearchSubmit} className="w-full max-w-lg mt-4">
         <Search
           searchQuery={searchQuery}

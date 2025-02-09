@@ -8,7 +8,7 @@ interface SearchProps {
 
 const Search = ({ searchQuery, setSearchQuery, onBackClick }: SearchProps) => {
   return (
-    <div className="w-full bg-gray-100 flex items-center">
+    <div className="w-full flex items-center">
       <button type="button" onClick={onBackClick}>
         <img
           src="https://image-resource.creatie.ai/135366163293663/135366179022307/5d9beed17b736aff8c11655e1defc3a8.png"
