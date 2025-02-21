@@ -38,11 +38,13 @@ const NewsContent = ({ title, link, summary, image }: NewsContentProps) => {
           <li key={index}>{line}</li>
         ))}
       </ul>
-      <img
-        className="w-full h-[150px] mt-[16px] bg-cover bg-center bg-no-repeat rounded-[16px]"
-        src={image}
-        alt="기사의 대표 이미지"
-      />
+      {image && (
+        <img
+          className="w-full h-[150px] mt-[16px] bg-cover bg-center bg-no-repeat rounded-[16px]"
+          src={image}
+          alt="기사의 대표 이미지"
+        />
+      )}
     </article>
   );
 };
